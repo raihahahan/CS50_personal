@@ -1,0 +1,112 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Bubble Sort has best case time complexity of n^2 and worst case of n. From the timing calculation, the run-time difference between the worst case (reversed) and the best case (sorted) is significant (worst / best = approximately n).
+
+sort2 uses: Merge Sort
+
+How do you know?: Merge Sort has best case time complexity of nlogn and worst case time complexity of nlogn. For large inputs of n, merge sort has a shorter running time than selection sort. Hence, by comparing sort3 and sort2, both their best and worst cases are relatively similar, but sort2 has shorter run-time in absolute terms.
+
+sort3 uses: Selection Sort
+
+How do you know?: Selection sort has best case time complexity of n^2 and worst case of n^2. Both the run-time in absolute terms for worst and best cases are roughly the same. As they are longer than merge sort in absolute terms, sort3 is the selection sort.
+
+Tabulation:
+
+sort1:
+    Big O Worst Case
+        N: 5000
+            real    0m0.078s
+            user    0m0.050s
+            sys     0m0.004s
+
+        N: 10000
+            real    0m0.414s
+            user    0m0.182s
+            sys     0m0.020s
+
+        N: 50000
+            real    0m15.004s
+            user    0m4.587s
+            sys     0m0.076s
+
+    Big Omega Best Case
+        N: 5000
+            real    0m0.012s
+            user    0m0.004s
+            sys     0m0.008s
+
+        N: 10000
+            real    0m0.021s
+            user    0m0.004s
+            sys     0m0.018s
+
+        N: 50000
+            real    0m6.768s
+            user    0m0.033s
+            sys     0m0.095s
+
+sort2:
+    Big O Worst Case
+        N: 5000
+            real    0m0.013s
+            user    0m0.005s
+            sys     0m0.008s
+
+        N: 10000
+            real    0m0.064s
+            user    0m0.008s
+            sys     0m0.020s
+
+        N: 50000
+            real    0m5.463s
+            user    0m0.020s
+            sys     0m0.092s
+
+    Big Omega Best Case
+        N: 5000
+            real    0m0.012s
+            user    0m0.008s
+            sys     0m0.004s
+
+        N: 10000
+            real    0m0.021s
+            user    0m0.004s
+            sys     0m0.017s
+
+        N: 50000
+            real    0m4.493s
+            user    0m0.041s
+            sys     0m0.086s
+
+sort3:
+    Big O Worst Case
+        N: 5000
+            real    0m0.032s
+            user    0m0.028s
+            sys     0m0.004s
+
+        N: 10000
+            real    0m0.250s
+            user    0m0.097s
+            sys     0m0.024s
+
+        N: 50000
+            real    0m10.372s
+            user    0m2.549s
+            sys     0m0.092s
+
+    Big Omega Best Case
+        N: 5000
+            real    0m0.033s
+            user    0m0.025s
+            sys     0m0.009s
+
+        N: 10000
+            real    0m0.247s
+            user    0m0.102s
+            sys     0m0.025s
+
+        N: 50000
+            real    0m13.500s
+            user    0m2.471s
+            sys     0m0.112s
